@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="main.js"></script>
+    <style>
+        button {
+            background-color: dodgerblue;
+        }
+        #ketqua {
+            color: cornflowerblue;
+        }
+        table,td,th,tr {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <tr>
+        <th>Amount</th>
+        <th style="width: 150px">From Currency</th>
+        <th style="width: 150px">To Currency</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td><input type="number" value="1" id="1"></td>
+        <td style="text-align: center">
+            <select name="fCurrent" id="fCurrent">
+                <option value="Viet Nam" >Viet Nam</option>
+            </select>
+        </td>
+        <td style="text-align: center">
+            <select name="tCurrent" id="tCurrent">
+                <option value="USD">USD</option>
+            </select>
+        </td>
+        <td>
+            <button onclick="chuyendoi()" >Convert</button>
+        </td>
+    </tr>
+</table>
+<p id="ketqua"></p>
+</body>
+</html>
